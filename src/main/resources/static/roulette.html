@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/roulette.js"></script>
+    <title>Roulette Controller Test</title>
+</head>
+<body>
+    <h1>Roulette Controller Test</h1>
+
+    <div>
+        <h2>Reset Roulette</h2>
+        <button onclick="rouletteReset()">Reset</button>
+        <pre id="rouletteResetResults"></pre>
+    </div>
+
+    <div>
+        <h2>Add Player</h2>
+        <input type="text" id="rouletteAddPlayer" placeholder="Enter player's name" />
+        <button onclick="rouletteAddPlayer()">Add</button>
+        <pre id="rouletteAddPlayerResults"></pre>
+    </div>
+
+    <div>
+        <h2>Set Selected Pockets</h2>
+        <h3>DISCLAIMER</h3>
+        <h4>For now it's possible to add duplicates of pockets or pockets with too big values</h4>
+        <h4>I'm not sure if it should work like that, we can fix this later i guess</h4>
+        <input type="text" id="rouletteSetSelectedPockets" placeholder="Enter pockets (e.g., 1,2,3)" />
+        <button onclick="rouletteSetSelectedPockets()">Set Pockets</button>
+        <pre id="rouletteSetSelectedPocketsResults"></pre>
+    </div>
+
+    <div>
+        <h2>Set Bet Amount</h2>
+        <input type="number" id="rouletteSetBetAmount" placeholder="Enter bet amount" />
+        <button onclick="rouletteSetBetAmount()">Set</button>
+        <pre id="rouletteSetBetAmountResults"></pre>
+    </div>
+
+    <div>
+        <h2>Place Bet</h2>
+        <label for="betName">Bet Type:</label>
+        <select id="betName">
+            <option value="STRAIGHT_UP">STRAIGHT_UP</option>
+            <option value="SPLIT">SPLIT</option>
+            <option value="STREET">STREET</option>
+            <option value="CORNER">CORNER</option>
+            <option value="FIRST_FOUR">FIRST_FOUR</option>
+            <option value="DOUBLE_STREET">DOUBLE_STREET</option>
+            <option value="RED">RED</option>
+            <option value="BLACK">BLACK</option>
+            <option value="ODD">ODD</option>
+            <option value="EVEN">EVEN</option>
+            <option value="LOW">LOW</option>
+            <option value="HIGH">HIGH</option>
+            <option value="DOZENS">DOZENS</option>
+            <option value="COLUMNS">COLUMNS</option>
+        </select>
+        <button onclick="roulettePlaceBet()">Place Bet</button>
+        <pre id="roulettePlaceBetResults"></pre>
+    </div>
+
+    <div>
+        <h2>Spin Roulette</h2>
+        <button onclick="rouletteSpin()">Spin</button>
+    </div>
+
+    <div>
+        <h2>Set Name</h2>
+        <input type="text" id="rouletteSetName" placeholder="Enter roulette name" />
+        <button onclick="rouletteSetName()">Set Name</button>
+        <pre id="rouletteSetNameResults"></pre>
+    </div>
+
+    <div>
+        <h2>Set Player's Money</h2>
+        <input type="text" id="rouletteSetPlayerMoney" placeholder="Enter player's name" />
+        <input type="number" id="rouletteSetPlayerMoneyAmount" placeholder="Enter money amount" />
+        <button onclick="rouletteSetPlayerMoney()">Set Money</button>
+        <pre id="rouletteSetPlayerMoneyResults"></pre>
+    </div>
+
+    <div>
+        <h2>Set Winning Pocket</h2>
+        <input type="number" id="rouletteSetWinningPocket" placeholder="Enter winning pocket" />
+        <button onclick="rouletteSetWinningPocket()">Set Winning Pocket</button>
+        <pre id="rouletteSetWinningPocketResults"></pre>
+    </div>
+
+    <div>
+        <h2>Add Player's Money</h2>
+        <input type="text" id="rouletteAddPlayerMoney" placeholder="Enter player's name" />
+        <input type="number" id="rouletteAddPlayerMoneyAmount" placeholder="Enter money amount" />
+        <button onclick="rouletteAddPlayerMoney()">Add Money</button>
+        <pre id="rouletteAddPlayerMoneyResults"></pre>
+    </div>
+
+    <div>
+        <h2>Get Name</h2>
+        <button onclick="rouletteGetName()">Get Name</button>
+        <pre id="rouletteGetNameResults"></pre>
+    </div>
+
+    <div>
+        <h2>Get Players</h2>
+        <button onclick="rouletteGetPlayers()">Get Players</button>
+        <pre id="rouletteGetPlayersResults"></pre>
+    </div>
+
+    <div>
+        <h2>Get Player Count</h2>
+        <button onclick="rouletteGetPlayerCount()">Count Players</button>
+        <pre id="rouletteGetPlayerCountResults"></pre>
+    </div>
+
+    <div>
+        <h2>Get Bet Ratio</h2>
+        <input type="text" id="rouletteGetBetRatio" placeholder="Enter bet name (e.g., STRAIGHT_UP)" />
+        <button onclick="rouletteGetBetRatio()">Get Bet Ratio</button>
+        <pre id="rouletteGetBetRatioResults"></pre>
+    </div>
+
+    <div>
+        <h2>Get Selected Pockets</h2>
+        <button onclick="rouletteGetSelectedPockets()">Get Pockets</button>
+        <pre id="rouletteGetSelectedPocketsResults"></pre>
+    </div>
+
+    <div>
+        <h2>Get Outcome</h2>
+        <button onclick="getOutcome()">Get Outcome</button>
+        <pre id="rouletteGetOutcomeResults"></pre>
+    </div>
+
+    <div>
+        <h2>Get Payout</h2>
+        <button onclick="rouletteGetPayout()">Get Payout</button>
+        <pre id="rouletteGetPayoutResults"></pre>
+    </div>
+
+    <div>
+        <h2>Get Pocket Color</h2>
+        <input type="number" id="rouletteGetPocketColor" placeholder="Enter pocket number" />
+        <button onclick="rouletteGetPocketColor()">Get</button>
+        <pre id="rouletteGetPocketColorResults"></pre>
+    </div>
+
+    <div>
+        <h2>Get Winning Pocket</h2>
+        <button onclick="rouletteGetWinningPocket()">Get</button>
+        <pre id="rouletteGetWinningPocketResults"></pre>
+    </div>
+
+    <div>
+        <h2>Get If Won</h2>
+        <button onclick="rouletteGetIfWon()">Get</button>
+        <pre id="rouletteGetIfWonResults"></pre>
+    </div>
+
+    <div>
+        <h2>Get Player's money</h2>
+        <input type="text" id="rouletteGetPlayerMoney" placeholder="Enter player's name" />
+        <button onclick="rouletteGetPlayerMoney()">Get Money</button>
+        <pre id="rouletteGetPlayerMoneyResults"></pre>
+    </div>
+</body>
+</html>

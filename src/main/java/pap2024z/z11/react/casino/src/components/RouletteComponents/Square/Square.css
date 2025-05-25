@@ -1,0 +1,54 @@
+/* Styles for Square component */
+.redSquare{
+    color: #1e1e2f;
+    background: #be3b3b;
+    border-left: 1px solid #be3b3b;
+    border-right: 1px solid #be3b3b;
+    z-index: 2;
+}
+.blackSquare{
+    background: #111111;
+    color: white;
+    border-left: 1px solid #be3b3b;
+    border-right: 1px solid #be3b3b;
+    box-shadow: 25px 0px 10px -25px #be3b3b inset,
+    -25px 0px 10px -25px #be3b3b inset;
+    z-index: 1;
+}
+.greenSquare{
+    background: #0c4d0c;
+    color: white;
+    border-left: 1px solid #0c4d0c;
+    border-right: 1px solid #0c4d0c;
+    z-index: 1;
+}
+.square{
+    height: 150px;
+    min-width: 54px;
+    line-height: 150px;
+    font-size: 33px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+.default_hidden{
+    visibility: hidden;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 5px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.show_selected{
+    visibility: visible;
+}

@@ -1,0 +1,73 @@
+/* Styles for BettingPanel component */
+.bettingPanel{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+    float: right;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.betInput{
+    padding: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.betButtons{
+    display: block;
+    padding: 20px;
+}
+.betButtons button{
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    color: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background: rgba(255, 0, 0, 0);
+    font-weight: bold;
+}
+.error{
+    color: red;
+    margin: 5px;
+
+}
+.redBet{
+    border: 2px solid red;
+}
+.redBet:hover{
+    color: #1e1e2f;
+    background: #be3b3b;
+    box-shadow: 0px 0px 15px #be3b3b;
+    transform: scale(1.05);
+}
+.greenBet{
+    border: 2px solid rgb(12, 77, 12);
+}
+.greenBet:hover{
+    color: white;
+    background: rgb(12, 77, 12);
+    box-shadow: 0px 0px 15px rgb(12, 77, 12);
+    transform: scale(1.05);
+}
+.blackBet{
+    border: 2px solid black;
+}
+.blackBet:hover{
+    color: white;
+    background: black;
+    box-shadow: 0px 0px 15px black;
+    transform: scale(1.05);
+}

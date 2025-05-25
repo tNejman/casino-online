@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/chart.js"></script>
+    <script defer src="js/admin.js"></script>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <h1>Hello Admin!</h1>
+    <div>
+            <h2>Active Players Table</h2>
+            <h3 id="pageNumber">Page number: N/A</h3>
+            <table id="table">
+                <tr>
+                    <th>UserId</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>moneyAmount</th>
+                    <th>loanAmount</th>
+                    <th>Email</th>
+                    <th>AccountCreationDate</th>
+                    <th>AccountModifiedDate</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td id="id_1"></td>
+                    <td id="name_1"></td>
+                    <td id="age_1"></td>
+                    <td id="moneyAmount_1"></td>
+                    <td id="loanAmount_1"></td>
+                    <td id="email_1"></td>
+                    <td id="accountCreationDate_1"></td>
+                    <td id="accountModifiedDate_1"></td>
+                    <td>
+                        <button id="delete_1" onclick="deletePlayer(1)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="id_2"></td>
+                    <td id="name_2"></td>
+                    <td id="age_2"></td>
+                    <td id="moneyAmount_2"></td>
+                    <td id="loanAmount_2"></td>
+                    <td id="email_2"></td>
+                    <td id="accountCreationDate_2"></td>
+                    <td id="accountModifiedDate_2"></td>
+                    <td>
+                        <button id="delete_2" onclick="deletePlayer(2)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="id_3"></td>
+                    <td id="name_3"></td>
+                    <td id="age_3"></td>
+                    <td id="moneyAmount_3"></td>
+                    <td id="loanAmount_3"></td>
+                    <td id="email_3"></td>
+                    <td id="accountCreationDate_3"></td>
+                    <td id="accountModifiedDate_3"></td>
+                    <td>
+                        <button id="delete_3" onclick="deletePlayer(3)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="id_4"></td>
+                    <td id="name_4"></td>
+                    <td id="age_4"></td>
+                    <td id="moneyAmount_4"></td>
+                    <td id="loanAmount_4"></td>
+                    <td id="email_4"></td>
+                    <td id="accountCreationDate_4"></td>
+                    <td id="accountModifiedDate_4"></td>
+                    <td>
+                        <button id="delete_4" onclick="deletePlayer(4)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="id_5"></td>
+                    <td id="name_5"></td>
+                    <td id="age_5"></td>
+                    <td id="moneyAmount_5"></td>
+                    <td id="loanAmount_5"></td>
+                    <td id="email_5"></td>
+                    <td id="accountCreationDate_5"></td>
+                    <td id="accountModifiedDate_5"></td>
+                    <td>
+                        <button id="delete_5" onclick="deletePlayer(5)">Delete</button>
+                    </td>
+                </tr>
+              </table>
+              <div style="display: flex; ">
+              <button onclick="setPage('prev')" id="prev_button">Prev Site</button>
+              <button onclick="setPage('next')" id="next_button">Next Site</button>
+              <button onclick="loadData()" id="load_button">Load Players</button>
+              </div>
+              <div class="player-management">
+                <h3>Account Manager</h3>
+                <label for="player-select">Select player:</label>
+                <select id="player-select"></select>
+                <label for="amount-input">Bonus Amount:</label>
+                <input type="number" id="amount-input" placeholder="Place bonus">
+                <button onclick="updatePlayerBalance()">Authorize</button>
+            </div>
+    
+            <div class="charts">
+                <h3>Charts</h3>
+                <button onclick="drawPieChart()">Load Pie Chart</button>
+                <h4>10 most successful players</h4>
+                <div class="chart"><canvas id="chart1"></canvas></div>
+                <button onclick="drawLineChart()">Load Line Chart</button>
+                <h4>Number of players by time</h4>
+                <div class="chart"><canvas id="chart2"></canvas></div>
+            </div>
+    </div>
+</body>
+</html>

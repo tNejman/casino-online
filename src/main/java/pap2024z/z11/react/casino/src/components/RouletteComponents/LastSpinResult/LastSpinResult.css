@@ -1,0 +1,15 @@
+/* Style for LastWinResult component */
+.container{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+    color: white;
+    display: grid;
+}
+.last_win_cont{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    margin-bottom: 20px;
+}

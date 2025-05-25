@@ -1,0 +1,23 @@
+/* Styles for Roulette component */
+.centre:after{
+  content: " ";
+  width: 5px;
+  height: 75px;
+  background: white;
+  display: block;
+}
+.centre{
+  position: relative;
+  top: 0;
+  left:calc(50% + 17px);
+  z-index: 100;
+  transform: translate(0px, 30px);
+  width: 5px;
+}
+.mid_container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}

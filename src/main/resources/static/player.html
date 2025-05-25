@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/player.js"></script>
+    <title>Player Controller Test</title>
+</head>
+<body>
+    <h1>Player Controller Test</h1>
+
+    <div>
+        <h2>Create Player</h2>
+        <input type="text" id="playerNameCreate" placeholder="Enter player name" />
+        <input type="text" id="playerPasswordCreate" placeholder="Enter player password" />
+        <input type="text" id="playerEmailCreate" placeholder="Enter player email" />
+        <input type="text" id="playerAgeCreate" placeholder="Enter player age" />
+        <button onclick="playerCreate()">Create</button>
+    </div>
+
+    <div>
+        <h2>Log in</h2>
+        <input type="text" id="playerLogin" placeholder="Enter player name" />
+        <input type="text" id="playerPassword" placeholder="Enter player password" />
+        <button onclick="playerLogin()">Log In</button>
+    </div>
+
+    <div>
+        <h2>Add Money</h2>
+        <input type="text" id="playerMoneyAdd" placeholder="Enter player's name" />
+        <input type="number" id="playerMoneyAddValue" placeholder="Enter money amount" />
+        <button onclick="playerAddMoney()">Add Money</button>
+    </div>
+
+    <div>
+        <h2>Set Name</h2>
+        <input type="text" id="playerGetCurrentName" placeholder="Enter current player's name" />
+        <input type="text" id="playerSetNewName" placeholder="Enter new player's name" />
+        <button onclick="playerSetName()">Set Name</button>
+    </div>
+
+    <div>
+        <h2>Set Money</h2>
+        <input type="text" id="playerNameMoney" placeholder="Enter player name" />
+        <input type="number" id="playerMoney" placeholder="Enter money amount" />
+        <button onclick="playerSetMoney()">Set Money</button>
+    </div>
+
+    <div>
+        <h2>Set If In Game</h2>
+        <input type="text" id="setIfInGameName" placeholder="Enter player's name" />
+        <select id="setIfInGameStatus">
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
+        <button onclick="setIfInGame()">Set In Game</button>
+        <pre id="setIfInGameResults"></pre>
+    </div>
+
+    <div>
+        <h2>Set If Ready</h2>
+        <input type="text" id="setIfReadyName" placeholder="Enter player's name" />
+        <select id="setIfReadyStatus">
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
+        <button onclick="setIfReady()">Set Ready</button>
+        <pre id="setIfReadyResults"></pre>
+    </div>
+
+    <div>
+        <h2>Get Player</h2>
+        <input type="text" id="playerGetName" placeholder="Enter player name" />
+        <button onclick="playerGet()">Get Player</button>
+        <pre id="playerData"></pre>
+    </div>
+
+    <div>
+        <h2>Get Money</h2>
+        <input type="text" id="playerGetMoney" placeholder="Enter player name" />
+        <button onclick="playerGetMoney()">Get Money</button>
+        <pre id="playerMoneyGet"></pre>
+    </div>
+
+    <div>
+        <h2>Get Hand</h2>
+        <input type="text" id="playerGetHand" placeholder="Enter player name" />
+        <button onclick="playerGetHand()">Get Hand</button>
+        <pre id="HandResults"></pre>
+    </div>
+
+    <div>
+        <h2>Get Hand Size</h2>
+        <input type="text" id="playerGetHandSize" placeholder="Enter player name" />
+        <button onclick="playerGetHandSize()">Get Hand Size</button>
+        <pre id="HandSizeResults"></pre>
+    </div>
+
+    <div>
+        <h2>Is Hand Empty?</h2>
+        <input type="text" id="playerIsHandEmpty" placeholder="Enter player name" />
+        <button onclick="playerIsHandEmpty()">Is Hand Empty?</button>
+        <pre id="IsHandEmptyResults"></pre>
+    </div>
+
+    <div>
+        <h2>Is In Game?</h2>
+        <input type="text" id="playerIsInGame" placeholder="Enter player name" />
+        <button onclick="playerIsInGame()">Is In Game?</button>
+        <pre id="IsInGameResults"></pre>
+    </div>
+
+    <div>
+        <h2>Is Ready?</h2>
+        <input type="text" id="playerIsReady" placeholder="Enter player name" />
+        <button onclick="playerIsReady()">Is Ready?</button>
+        <pre id="IsReadyResults"></pre>
+    </div>
+</body>
+</html>
